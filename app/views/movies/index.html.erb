@@ -1,0 +1,10 @@
+<div class="row">
+  <%= render "layouts/menu_list" %>
+
+  <div class="medium-10 columns">
+    <% @movies.each do |movie| %>
+      <%= render partial: "layouts/movie", object: movie %>
+      <hr />
+    <% end %>
+  </div>
+</div>

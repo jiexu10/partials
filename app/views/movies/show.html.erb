@@ -1,0 +1,16 @@
+<div class="row">
+  <%= render "layouts/menu_list" %>
+
+  <div class="medium-10 columns">
+    <%= render partial: "layouts/movie", object: @movie %>
+
+    <div>
+      <%= button_to "Rent!", movie_rentals_path(@movie), class: :button %>
+    </div>
+
+    <div>
+      <%= link_to "Back", movies_path, class: :button %>
+    </div>
+
+  </div>
+</div>
